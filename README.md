@@ -1,0 +1,1 @@
+# ploidy_mating_QG
