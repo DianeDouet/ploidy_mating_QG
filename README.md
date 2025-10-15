@@ -1,8 +1,8 @@
 # The effects of ploidy and mating system on the evolvability of populations
 
-In this repository, you will find the python file containing the code used for the simulations of the paper: "The effects of ploidy and mating system on the evolvability of populations: theoretical and empirical investigations"
+In this repository, you will find the python file containing the code and the dataset used for the simulations of the paper: "The effects of ploidy and mating system on the evolvability of populations: theoretical and empirical investigations"
 
-This file contains a main function called "simulation" with different parameters defined at the end of the file: number of loci, population size, dosage, mutation rate, selfing rate, ploidy level, and number of simulations to run.
+The python file contains a main function called "simulation" with different parameters defined at the end of the file: number of loci, population size, dosage, mutation rate, selfing rate, ploidy level, and number of simulations to run.
 The "simulation" function calls different functions present in the same file:
 - mutation: operates mutations on the genome, according to the mutation rate per haplotype
 - fitness: computes the fitness using the selection function
