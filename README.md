@@ -1,8 +1,8 @@
 # The effects of ploidy and mating system on the evolvability of populations
 
-In this repository, you will find the python file containing the code used for the simulations of the paper: "The effects of ploidy and mating system on the evolvability of populations: theoretical and empirical investigations" and the dataset used for the empirical results.
+In this repository, you will find two python files containing the codes used for the simulations of the paper: "The effects of ploidy and mating system on the evolvability of populations: theoretical and empirical investigations" and the dataset used for the empirical results.
 
-The python file contains a main function called "simulation" with different parameters defined at the end of the file: number of loci, population size, dosage, mutation rate, selfing rate, ploidy level, and number of simulations to run.
+The python file Code_Evolvability contains a main function called "simulation" with different parameters defined at the end of the file: number of loci, population size, dosage, mutation rate, selfing rate, ploidy level, and number of simulations to run.
 The "simulation" function calls different functions present in the same file:
 - mutation: operates mutations on the genome, according to the mutation rate per haplotype
 - fitness: computes the fitness using the selection function
@@ -12,4 +12,6 @@ The "simulation" function calls different functions present in the same file:
 - variance: computes the genetic variance, the genic variance and the genetic covariance
 - freqAncestral: returns the frequency of an ancestral allele
 - inbreedingDepression: computes inbreeding depression
+
+The python file Code_Bottleneck is another version of the code designed to simulate demographic stochasticity associated with polyploidization events. 
 
