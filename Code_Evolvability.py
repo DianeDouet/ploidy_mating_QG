@@ -115,6 +115,7 @@ def variances(genome, genotype, Npop, L, ploidy, dosage=1):
             sum_geno_loc = 0
             for c in range(ploidy):
                 sum_geno_loc += genome[ploidy*j+c,i] #summing the values stored in one locus on each chromosome
+            phenotype_loc[j] = dosage*sum_geno_loc
             
         meanPhenotype = np.mean(phenotype_loc) 
         par_locus += np.sum((phenotype_loc - meanPhenotype)**2)/Npop #computing the additive variance
@@ -274,6 +275,7 @@ nbSim = 100 #number of simulations
 
 #Running the simulation with the different parameters above
 fit, varg, var_add, cov, freq0, inDep = simulation(nbSim, L, varAddEff, dosage, Npop, U, om_2, selfing, ploidy)
+
 
 
 
