@@ -105,9 +105,6 @@ def variances(genome, genotype, Npop, L, ploidy, dosage=1):
     geneticVariance = np.sum((genotype-meanGenotype)**2)/Npop 
     par_locus = 0 #genic variance
     
-    if ploidy == 2:
-        dosage = 1
-    
     for i  in range(L):
         phenotype_loc = [0 for _ in range(Npop)]
         
@@ -275,6 +272,7 @@ nbSim = 100 #number of simulations
 
 #Running the simulation with the different parameters above
 fit, varg, var_add, cov, freq0, inDep = simulation(nbSim, L, varAddEff, dosage, Npop, U, om_2, selfing, ploidy)
+
 
 
 
